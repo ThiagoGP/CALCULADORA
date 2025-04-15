@@ -238,3 +238,42 @@ label{
     font-weight: 700;
     font-size: 20px;
 }
+
+#vermelho{
+    display: none;
+    margin-left: 5%;
+    color: red;
+    font-size: 12px;
+}
+
+#vermelho2{
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+
+#vermelho3{
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+
+#vermelho4{
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-left: 5%;
+}
+/* 
+.grupo-vermelho span{
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.grupo-vermelho input{
+    border-color: red;
+}
+ */
+
+

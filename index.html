@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <div class="calculadora">
-           <h1>Mortgage Calculator</h1>
+            <h1>Mortgage Calculator</h1>
 
-           
-   
-            <label  class="label-fora">Mortgage Amount</label>
-            <div class="grupo">
-                <span class="texto">£</span><input type="number" name="Amount" class="amount" id="principal">
+
+
+            <label class="label-fora">Mortgage Amount</label>
+            <div class="grupo-vermelho">
+                <div class="grupo">
+                    <span class="texto">£</span><input type="number" name="Amount" class="amount" id="principal">
+
+                </div>
+                <span id="vermelho">This field is required</span>
             </div>
             <div class="grupo2">
                 <div class="bloco">
-                <label for="year">Mortgage Term</label>
-                <div class="campo">
-                  
-                  <input type="number" name="year" class="pequeno" step="1" id="anos"><span class="texto1">years</span>
+                    <label for="year">Mortgage Term</label>
+                    <div class="campo">
+
+                        <input type="number" name="year" class="pequeno" step="1" id="anos"><span
+                            class="texto1">years</span>
+                            
+                    </div>
+                    <span id="vermelho2">This field is required</span>
                 </div>
-            </div>
-            <div class="bloco">
-                <label for="interest">Interest Rate</label>
-                <div class="campo">
-                    
-                  <input type="number" name="interest" class="pequeno" id="juros"><span class="texto1">%</span>
+                
+                <div class="bloco">
+                    <label for="interest">Interest Rate</label>
+                    <div class="campo">
+
+                        <input type="number" name="interest" class="pequeno" id="juros"><span class="texto1">%</span>
+                    </div>
+                    <span id="vermelho3">This field is required</span>
                 </div>
-              </div>
+                
             </div>
-              
-            
+           
+
             <label class="label-fora">Mortgage Type</label>
             <div class="campo3">
-                
-            <input type="radio" name="tipoPagamento" id="fixo" value="fixo"> 
-            <label for="fixo">Repayment</label>
-             </div>
+
+                <input type="radio" name="tipoPagamento" id="fixo" value="fixo">
+                <label for="fixo">Repayment</label>
+            </div>
             <div class="campo3">
                 <input type="radio" name="tipoPagamento" id="variavel" value="variavel">
                 <label for="variavel">Interest Only</label>
-            
+
             </div>
+            <span id="vermelho4">This field is required</span>
 
             <button type="button" class="botao" id="calc">
                 <img src="assets/icon-calculator.svg" alt="calculadora">
@@ -55,32 +68,32 @@
         </div>
         <div class="resultado">
             <div id="sem-resultado">
-            <img src="assets/illustration-empty.svg" alt="calculadora"><br>
-            <span class="texto-resultado">Results shown here</span>
-            <p class="paragrafo">
-                Complete the form and click "calculate repayments" to see what your monthly repayments would be.
-            </p>
-        </div>
-        <div class="com-resultado">
-            <span class="texto-resultado">
-                Your results
-            </span>
-            <p class="paragrafo2"> Your results are shown below base on the information
-                you provided. To adjust the results, edit the form and click "calculate repayments" again.
-            </p>
+                <img src="assets/illustration-empty.svg" alt="calculadora"><br>
+                <span class="texto-resultado">Results shown here</span>
+                <p class="paragrafo">
+                    Complete the form and click "calculate repayments" to see what your monthly repayments would be.
+                </p>
+            </div>
+            <div class="com-resultado">
+                <span class="texto-resultado">
+                    Your results
+                </span>
+                <p class="paragrafo2"> Your results are shown below base on the information
+                    you provided. To adjust the results, edit the form and click "calculate repayments" again.
+                </p>
 
-            <div class="resultado-mensal">
-                <span class="texto-dentro">Your monthly Repayment</span> <br>
-                <span class="valor" id="resultadoMensal">£1,797.74</span><br><br>
-                <hr><br>
-                <span class="texto-dentro">Total you'll repay over the term</span><br>
-                <span class="resultadopequeno" id="resultadoTotal">£539,322.94</span>
-        </div>
+                <div class="resultado-mensal">
+                    <span class="texto-dentro">Your monthly Repayment</span> <br>
+                    <span class="valor" id="resultadoMensal">£1,797.74</span><br><br>
+                    <hr><br>
+                    <span class="texto-dentro">Total you'll repay over the term</span><br>
+                    <span class="resultadopequeno" id="resultadoTotal">£539,322.94</span>
+                </div>
+
+            </div>
 
         </div>
-        
-    </div>
-    <script src="js/script.js" defer></script>
+        <script src="js/script.js" defer></script>
 </body>
 
 </html>
